@@ -1,0 +1,334 @@
+/* default typsnitt*/
+*{
+  font-family: "comfortaa";
+  color: black;
+}
+/* bild till header*/
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-image:url("../img/text.png"), url("../img/header.jpeg");
+  height: 500px;
+  border-bottom: 4px solid black;
+  background-size: 70%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+}
+/* position och utseende på självaste nav baren*/
+nav{
+  background-color: black;
+  width: 100%;
+  opacity: 80%;
+  height: 60px;
+  color: white;
+}
+/*utseende och position till phil bilden på startsidan*/
+.side{
+  background-image: url("../img/phil3.png");
+  height: minmax(700px, auto);
+  background-size: cover;
+}
+/*startsida main content look*/
+.main{
+  background-color: white;
+  margin: 10%;
+}
+.footer{
+  background-color: rgb(0, 14, 144);
+
+}
+/* utseende på listan i nav*/
+
+}
+nav ul{
+  list-style-type: none;
+  padding-top: 2px;
+}
+/* utseende och mellanrum på länkarna i nav*/
+nav ul li{
+  display:inline;
+  border: 2px;
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/* ändrar avståndet i nav när de inte får plats på samma rad längre*/
+@media only screen and (max-width: 910px){
+  nav ul li{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+/* markerad länk i nav */
+nav ul li a:hover{
+  color: rgb(242, 76, 15);
+}
+/* utseende på länk i nav*/
+nav ul li a{
+  font-family: "alkalami";
+  color: white;
+  text-decoration: none;
+}
+/*text till phil bild*/
+#quote{
+  font-family: "alkalami";
+  display: inline;
+  font-size: 42px;
+  color: rgb(242, 76, 15);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* båda svarta rutorna över och under phil bild*/
+#tillägg{
+  background-color: black;
+  height: minmax(100px, auto);
+}
+#tillägg2{
+  background-color: black;
+  height: minmax(100px, auto);
+}
+/* class som ger kursiv text stil*/
+.italic{
+  font-style: italic;
+}
+/* class som ger bold text stil*/
+.bold{
+  font-weight: bolder;
+}
+/* ger texten grå färg*/
+.gray{
+  color: rgb(126, 126, 126);
+}
+/* sprider texten enda ut till kanterna på startsidan*/
+.main p{
+  text-align: justify;
+}
+/* footer style */
+.footer ul li{
+  list-style: none;
+  style: inline;
+  color: rgb(59, 100, 242);
+  margin-right: 10px;
+}
+h1{
+  text-align: center;
+}
+/* Head till de andra länkade sidorna*/
+.page-head{
+  background-image:url("../img/andraheader.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-bottom: 8px;
+  border-bottom-style: solid;
+}
+.page-head h1{
+  font-size: 100px;
+  color: rgb(0, 52, 96);
+}
+/* head till cast*/
+.page-head-c{
+  background-image:url("../img/andraheader.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-bottom: 8px;
+  border-bottom-style: solid;
+}
+.page-head-c h1{
+  font-size: 100px;
+  color: rgb(0, 52, 96);
+}
+/* content till highlights*/
+.main-h{
+  background-image: url("../img/bg15.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid;
+  border-width: 6px;
+  border-color: rgb(1, 15, 135);
+  padding: 7%;
+}
+/*bestämmer hur videos och bilder ska se ut och position*/
+.main-h img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(1, 15, 135);
+}
+.main-h iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(1, 15, 135);
+}
+#youtube{
+  height: 315px;
+  width: 560px;
+}
+/* alla h2 titlar*/
+h2{
+  text-align: center;
+  font-weight: bolder;
+}
+/*hur texten i highlights ska vara*/
+.main-h p{
+  text-align: justify;
+  color: black;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.main-h h2{
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+}
+/* bakgrunden till main content i cast*/
+.main-c{
+  background-image: url("../img/nature.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  border-bottom: solid 5px;
+}
+/* de olika personernas sections utseende layout*/
+.main-c section:nth-of-type(odd){
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 40%;
+  background-color: rgb(51, 51, 51);
+  border-style:solid;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: black;
+}
+.main-c section:nth-of-type(even){
+  margin-top: 10%;
+  margin-left: 40%;
+  margin-right: 15%;
+  background-color: rgb(51, 51, 51);
+  border-style:solid;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: black;
+}
+/* bildens margins osv. för att få bra position*/
+.main-c section img{
+  margin-left: 10%;
+  width: 25%;
+  margin-right: 10%;
+  height: auto;
+}
+/*hur listan och text ska se ut inom sectionens*/
+.main-c section ul li{
+  color: white;
+}
+.main-c section ul{
+  list-style: none;
+  font-size: 20px;
+  margin-top: 5%;
+}
+.main-c section p{
+  margin: 5%;
+  color: white;
+}
+.main-c h2{
+  color: rgb(233, 112, 0);
+}
+/*hamburgar meny cod*/
+.menu-btn{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.menu-btn_burger{
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+  content:"";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before{
+  transform: translateY(-16px);
+}
+.menu-btn_burger::after{
+  transform: translateY(16px);
+}
+/* menu button open animation code*/
+.menu-btn.open .menu-btn_burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.menu-btn.open .menu-btn_burger::before{
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn_burger::after{
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+/* button position*/
+.menu-btn{
+  float: right;
+}
+/* kod till dropdown menu*/
+.dropdown-container{
+  display: none;
+  opacity: 80%;
+  background-color: black;
+  padding-left: 2px;
+  width: 220px;
+  height: 450px;
+  margin-top: 70px;
+  padding-top: 5px;
+  transition: all .5s ease-in-out;
+}
+.dropdown-container ul li{
+  opacity: 100%;
+  list-style: none;
+  font-size: 20px;
+}
+.dropdown-container ul li a{
+  opacity: 100%;
+  text-decoration: none;
+  color: white;
+}
+/* färga länken längst ner på startsidan vit*/
+.footer ul li a{
+  color: white;
+  text-decoration: none;
+}
+.main-p{
+  background:white;
+  padding: 6%;
+}
+.main-p img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.main-p p{
+  text-align: justify;
+}
